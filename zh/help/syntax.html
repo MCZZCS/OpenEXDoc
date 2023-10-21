@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基础语法 | OpenEX</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/OpenEXDoc/logo.png">
+    <meta name="description" content="OpenEX 面向过程脚本语言">
+    
+    <link rel="preload" href="/OpenEXDoc/assets/css/0.styles.aeecdd65.css" as="style"><link rel="preload" href="/OpenEXDoc/assets/js/app.d3891f39.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/2.4c546f0b.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/1.80356216.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/31.62d2a9ac.js" as="script"><link rel="prefetch" href="/OpenEXDoc/assets/js/10.c3b7a0fc.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/11.732cf3e0.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/12.895b5595.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/13.9426da25.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/14.856c1518.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/15.758ee11b.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/16.e925b239.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/17.5b873df7.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/18.4c170722.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/19.a45744ea.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/20.c22d9498.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/21.a45f0526.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/22.463c8a59.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/23.4ee790cc.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/24.48c05d5f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/25.9e4b0673.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/26.af84de95.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/27.a14858af.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/28.8e041326.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/29.45aaf6c9.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/3.4db2e19a.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/30.82e683c7.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/32.32aab87d.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/33.3f1bf375.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/34.00411414.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/4.45665f8a.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/5.b31b942f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/6.4910e764.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/7.c5640ac7.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/vendors~docsearch.77260563.js">
+    <link rel="stylesheet" href="/OpenEXDoc/assets/css/0.styles.aeecdd65.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/OpenEXDoc/zh/" class="home-link router-link-active"><img src="/OpenEXDoc/icon.png" alt="OpenEX" class="logo"> <span class="site-name can-hide">OpenEX</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/OpenEXDoc/" class="nav-link router-link-active">
+  🏡首页
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/api.html" class="nav-link">
+  📖Runtime API
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/issues.html" class="nav-link">
+  🎲问题解决
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/help.html" class="nav-link">
+  🚀语法
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/start.html" class="nav-link">
+  ⚡快速上手
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OpenEXDoc/en/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/OpenEXDoc/zh/help/syntax.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/OpenEXDoc/" class="nav-link router-link-active">
+  🏡首页
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/api.html" class="nav-link">
+  📖Runtime API
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/issues.html" class="nav-link">
+  🎲问题解决
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/help.html" class="nav-link">
+  🚀语法
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/start.html" class="nav-link">
+  ⚡快速上手
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OpenEXDoc/en/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/OpenEXDoc/zh/help/syntax.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开始</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基础教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/OpenEXDoc/zh/help/" aria-current="page" class="sidebar-link">基础教程</a></li><li><a href="/OpenEXDoc/zh/help/syntax.html" aria-current="page" class="active sidebar-link">基础语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/help/syntax.html#第一个openex程序" class="sidebar-link">第一个OpenEX程序</a></li><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/help/syntax.html#openex-关键字" class="sidebar-link">OpenEX 关键字</a></li><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/help/syntax.html#openex-注释" class="sidebar-link">OpenEX 注释</a></li></ul></li><li><a href="/OpenEXDoc/zh/help/value.html" class="sidebar-link">变量类型</a></li><li><a href="/OpenEXDoc/zh/help/sem.html" class="sidebar-link">运算符</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="基础语法"><a href="#基础语法" class="header-anchor">#</a> 基础语法</h1> <hr> <h2 id="第一个openex程序"><a href="#第一个openex程序" class="header-anchor">#</a> 第一个OpenEX程序</h2> <blockquote><p>如果您还没有配置好<code>OpenEX</code>环境,那么请前往<a href="/zh/start">快速上手</a></p></blockquote> <p>创建一个新的文件夹或定位到一个空的文件夹中, 创建一个叫<code>main.exf</code>或<code>script.exf</code>的文件,我们将这个文件作为脚本入口点</p> <div class="language-openex line-numbers-mode"><pre class="language-text"><code>// script.exf
+
+include &quot;system&quot;;
+
+system.print(&quot;Hello! World!&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>在命令行输入以下命令来运行脚本,然后您会在控制台看到打印了<code>Hello! World!</code></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token operator">&gt;</span> openex <span class="token parameter variable">-filename</span> script.exf
+Hello<span class="token operator">!</span> World<span class="token operator">!</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="openex-关键字"><a href="#openex-关键字" class="header-anchor">#</a> OpenEX 关键字</h2> <p>以下列出了所有OpenEX的关键字与保留字,您不能使用以下字符作为变量名或函数名.<br>
+只有小部分关键字可被用作变量的值</p> <blockquote><p><code>废弃</code> 已经被废弃的字段并做保留字处理,虽然其失去了原有的作用但仍然不可用该字段定义变量名或函数名</p></blockquote> <blockquote><p><code>废除</code> 该字段已经彻底从OpenEX抹除,不发挥其原本作用也不会影响变量名或函数名定义</p></blockquote> <table><thead><tr><th style="text-align:left;">名</th> <th style="text-align:left;">描述</th> <th style="text-align:left;">备注</th></tr></thead> <tbody><tr><td style="text-align:left;">function</td> <td style="text-align:left;">函数定义,您需要用此关键字定义一个函数</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">value</td> <td style="text-align:left;">变量定义,通过此关键字声明一个变量</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">local</td> <td style="text-align:left;">私有作用域声明</td> <td style="text-align:left;"><code>废弃</code></td></tr> <tr><td style="text-align:left;">global</td> <td style="text-align:left;">公有作用域声明</td> <td style="text-align:left;"><code>废弃</code></td></tr> <tr><td style="text-align:left;">exe</td> <td style="text-align:left;">旧版函数调用声明</td> <td style="text-align:left;"><code>废除</code></td></tr> <tr><td style="text-align:left;">if</td> <td style="text-align:left;">判断语句声明</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">else</td> <td style="text-align:left;"><code>否则</code>子判断语句声明</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">while</td> <td style="text-align:left;">循环语句声明</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">return</td> <td style="text-align:left;">函数返回声明</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">false</td> <td style="text-align:left;">布尔值<code>假</code></td> <td style="text-align:left;">该字段可作变量值</td></tr> <tr><td style="text-align:left;">true</td> <td style="text-align:left;">布尔值<code>真</code></td> <td style="text-align:left;">该字段可作变量值</td></tr> <tr><td style="text-align:left;">include</td> <td style="text-align:left;">外部库导入</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">this</td> <td style="text-align:left;">代表正在执行的脚本上下文,调用时可以代替脚本名</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">null</td> <td style="text-align:left;">空值</td> <td style="text-align:left;">该字段可作变量值</td></tr> <tr><td style="text-align:left;">elif</td> <td style="text-align:left;"><code>否则如果</code>子判断语句声明</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">break</td> <td style="text-align:left;">循环退出语句</td> <td style="text-align:left;">-</td></tr></tbody></table> <h2 id="openex-注释"><a href="#openex-注释" class="header-anchor">#</a> OpenEX 注释</h2> <p>用于对代码段进行标记,被注释的内容不会参与编译</p> <ul><li>单行注释 <code>//</code> : 单行注释后后方的字段不会被编译器解析</li> <li>多行注释 <code>/* 注释内容 */</code> : 多行注释内的字段不会被编译器解析</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/OpenEXDoc/zh/help/" class="prev router-link-active">
+        基础教程
+      </a></span> <span class="next"><a href="/OpenEXDoc/zh/help/value.html">
+        变量类型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/OpenEXDoc/assets/js/app.d3891f39.js" defer></script><script src="/OpenEXDoc/assets/js/2.4c546f0b.js" defer></script><script src="/OpenEXDoc/assets/js/1.80356216.js" defer></script><script src="/OpenEXDoc/assets/js/31.62d2a9ac.js" defer></script>
+  </body>
+</html>
