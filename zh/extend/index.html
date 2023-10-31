@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>扩展开发 | OpenEX</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/OpenEXDoc/logo.png">
+    <meta name="description" content="OpenEX 面向过程脚本语言">
+    
+    <link rel="preload" href="/OpenEXDoc/assets/css/0.styles.aeecdd65.css" as="style"><link rel="preload" href="/OpenEXDoc/assets/js/app.417250fd.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/2.4c546f0b.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/1.80356216.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/29.2995af88.js" as="script"><link rel="prefetch" href="/OpenEXDoc/assets/js/10.c3b7a0fc.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/11.732cf3e0.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/12.895b5595.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/13.9426da25.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/14.856c1518.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/15.758ee11b.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/16.e925b239.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/17.5b873df7.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/18.4c170722.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/19.a45744ea.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/20.c22d9498.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/21.a45f0526.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/22.b4e4afcc.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/23.ff108340.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/24.ae03ad44.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/25.7110ce65.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/26.54bfb61d.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/27.edf0e3cd.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/28.f68cc95a.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/3.4db2e19a.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/30.71464ca6.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/31.ed932f26.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/32.1375009e.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/33.8add6915.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/34.859c3532.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/35.eb0ae81f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/36.38af1be6.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/37.dc758899.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/4.45665f8a.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/5.b31b942f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/6.4910e764.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/7.c5640ac7.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/vendors~docsearch.77260563.js">
+    <link rel="stylesheet" href="/OpenEXDoc/assets/css/0.styles.aeecdd65.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/OpenEXDoc/zh/" class="home-link router-link-active"><img src="/OpenEXDoc/icon.png" alt="OpenEX" class="logo"> <span class="site-name can-hide">OpenEX</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/OpenEXDoc/" class="nav-link router-link-active">
+  🏡首页
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/api.html" class="nav-link">
+  📖Runtime API
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/issues.html" class="nav-link">
+  🎲问题解决
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/help/" class="nav-link">
+  🚀语法
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/start.html" class="nav-link">
+  ⚡快速上手
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OpenEXDoc/en/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/OpenEXDoc/zh/extend/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/OpenEXDoc/" class="nav-link router-link-active">
+  🏡首页
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/api.html" class="nav-link">
+  📖Runtime API
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/issues.html" class="nav-link">
+  🎲问题解决
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/help/" class="nav-link">
+  🚀语法
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/start.html" class="nav-link">
+  ⚡快速上手
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OpenEXDoc/en/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/OpenEXDoc/zh/extend/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开始</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础教程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>扩展开发</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/OpenEXDoc/zh/extend/" aria-current="page" class="active sidebar-link">基础开发</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/extend/#前提" class="sidebar-link">前提</a></li><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/extend/#准备" class="sidebar-link">准备</a></li><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/extend/#初步开发" class="sidebar-link">初步开发</a></li></ul></li><li><a href="/OpenEXDoc/zh/extend/struct.html" class="sidebar-link">项目结构</a></li><li><a href="/OpenEXDoc/zh/extend/parser.html" class="sidebar-link">语法开发</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="扩展开发"><a href="#扩展开发" class="header-anchor">#</a> 扩展开发</h1> <p>本文档主要介绍了您如何对OpenEX进行扩展开发</p> <h2 id="前提"><a href="#前提" class="header-anchor">#</a> 前提</h2> <p>我们使用<code>Apache License v2.0</code>作为我们的开源协议</p> <ul><li>在此基础上我们有以下开发要求
+<ol><li>在您二次开发的OpenEX中,您需要更改您的OpenEX版本格式中的<code>Edition</code>字段的值</li> <li>如果您想将您的代码并入到我们的正式版中,请联系<code>幻梦互联</code>或<code>MCZZCS</code>团队</li> <li>如果您对以上任何要求有疑问,请递交到<code>GitHub Issues</code>或<code>幻梦互联</code></li></ol></li></ul> <h2 id="准备"><a href="#准备" class="header-anchor">#</a> 准备</h2> <ol><li>新建一个文件夹,使用<code>Git</code>进行初始化</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> init
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>从<code>OpenEX</code>的存储库中拷贝源代码到本地项目中</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> clone https://github.com/MCZZCS/OpenEXPro.git
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="3"><li>使用<code>IntelliJ IDEA</code>或其他集成开发环境打开您拷贝下来的项目,开始开发吧!</li></ol> <blockquote><p>如果您的集成开发环境不支持自动导入<code>Maven</code>项目,请从Maven官网下载并使用<code>Maven</code>程序导入</p></blockquote> <h2 id="初步开发"><a href="#初步开发" class="header-anchor">#</a> 初步开发</h2> <p>我们在项目目录中找到一个叫<code>src</code>的文件夹,该文件夹存储了项目的所有源代码文件<br>
+打开项目后在<code>io.github.mczzcs</code>包下找到<code>Main</code>类,该类为OpenEX的启动类</p> <img src="/OpenEXDoc/code_1.png" alt="code1"> <p>在以上截图中,代码第8，9行有这么两段代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> version <span class="token operator">=</span> <span class="token string">&quot;v0.1.4&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> name <span class="token operator">=</span> <span class="token string">&quot;OpenEX Pro&quot;</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li><code>version</code> OpenEX的更新号,通常代表一个版本的更新程度</li> <li><code>name</code> OpenEX的版本名,通常代表一个版本</li></ul> <div class="custom-block danger"><p class="custom-block-title">警告</p> <p>开发新版本时候一定要更改<code>name</code>常量的值,您不能与主要更新版本的版本名重合,防止混乱</p></div> <p>更改版本名为您自己的语言名称,将更新号更改到<code>v0.0.1</code>或您自己喜欢的格式</p> <blockquote><p>这里我们将<code>name</code>改成<code>Your version</code>, <code>version</code>改成<code>v0.0.1</code>为例</p></blockquote> <p>然后输入以下命令来构建并运行项目</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>mvn <span class="token function">clear</span> <span class="token function">install</span>
+<span class="token function">java</span> <span class="token parameter variable">-jar</span> <span class="token parameter variable">-Dfile.encoding</span><span class="token operator">=</span>UTF-8 ./target/OpenEXPro-1.0-SHANPSHOT.jar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>然后可以在控制台看到以下输出结果</p> <img src="/OpenEXDoc/console_1.png" alt="console1"> <p>到了这一步,你的程序就算运行成功了!很好的开始!</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/OpenEXDoc/zh/help/sem.html" class="prev">
+        运算符
+      </a></span> <span class="next"><a href="/OpenEXDoc/zh/extend/struct.html">
+        项目结构
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/OpenEXDoc/assets/js/app.417250fd.js" defer></script><script src="/OpenEXDoc/assets/js/2.4c546f0b.js" defer></script><script src="/OpenEXDoc/assets/js/1.80356216.js" defer></script><script src="/OpenEXDoc/assets/js/29.2995af88.js" defer></script>
+  </body>
+</html>
