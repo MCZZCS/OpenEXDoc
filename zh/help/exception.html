@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>异常处理 | OpenEX</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/OpenEXDoc/logo.png">
+    <meta name="description" content="OpenEX 面向过程脚本语言">
+    
+    <link rel="preload" href="/OpenEXDoc/assets/css/0.styles.aeecdd65.css" as="style"><link rel="preload" href="/OpenEXDoc/assets/js/app.0b078796.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/2.4c546f0b.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/1.80356216.js" as="script"><link rel="preload" href="/OpenEXDoc/assets/js/33.bdb5976a.js" as="script"><link rel="prefetch" href="/OpenEXDoc/assets/js/10.c3b7a0fc.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/11.732cf3e0.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/12.895b5595.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/13.9426da25.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/14.856c1518.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/15.758ee11b.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/16.e925b239.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/17.5b873df7.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/18.4c170722.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/19.a45744ea.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/20.c22d9498.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/21.a45f0526.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/22.431e66aa.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/23.4ee790cc.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/24.48c05d5f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/25.db006da9.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/26.7255540f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/27.8721e18f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/28.10b09354.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/29.99e4ca5f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/3.4db2e19a.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/30.ee69313e.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/31.7fa9f044.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/32.8617a51e.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/34.4e6625fc.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/35.f45697af.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/36.ea3c2746.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/37.b9f3bf39.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/38.b48b1fff.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/4.45665f8a.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/5.b31b942f.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/6.4910e764.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/7.c5640ac7.js"><link rel="prefetch" href="/OpenEXDoc/assets/js/vendors~docsearch.77260563.js">
+    <link rel="stylesheet" href="/OpenEXDoc/assets/css/0.styles.aeecdd65.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/OpenEXDoc/zh/" class="home-link router-link-active"><img src="/OpenEXDoc/icon.png" alt="OpenEX" class="logo"> <span class="site-name can-hide">OpenEX</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/OpenEXDoc/" class="nav-link router-link-active">
+  🏡首页
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/api.html" class="nav-link">
+  📖Runtime API
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/issues.html" class="nav-link">
+  🎲问题解决
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/help/" class="nav-link router-link-active">
+  🚀语法
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/start.html" class="nav-link">
+  ⚡快速上手
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OpenEXDoc/en/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/OpenEXDoc/zh/help/exception.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/OpenEXDoc/" class="nav-link router-link-active">
+  🏡首页
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/api.html" class="nav-link">
+  📖Runtime API
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/issues.html" class="nav-link">
+  🎲问题解决
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/help/" class="nav-link router-link-active">
+  🚀语法
+</a></div><div class="nav-item"><a href="/OpenEXDoc/zh/start.html" class="nav-link">
+  ⚡快速上手
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OpenEXDoc/en/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/OpenEXDoc/zh/help/exception.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开始</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基础教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/OpenEXDoc/zh/help/" aria-current="page" class="sidebar-link">基础教程</a></li><li><a href="/OpenEXDoc/zh/help/syntax.html" class="sidebar-link">基础语法</a></li><li><a href="/OpenEXDoc/zh/help/value.html" class="sidebar-link">变量类型</a></li><li><a href="/OpenEXDoc/zh/help/sem.html" class="sidebar-link">运算符</a></li><li><a href="/OpenEXDoc/zh/help/exception.html" aria-current="page" class="active sidebar-link">异常处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/help/exception.html#接住异常" class="sidebar-link">接住异常</a></li><li class="sidebar-sub-header"><a href="/OpenEXDoc/zh/help/exception.html#抛出异常" class="sidebar-link">抛出异常</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>扩展开发</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="异常处理"><a href="#异常处理" class="header-anchor">#</a> 异常处理</h1> <p>本文档介绍了您如何在OpenEX处理运行时异常</p> <p>有关异常类型的详细信息,请前往<a href="/OpenEXDoc/zh/issues.html#对照表">对照表</a></p> <hr> <h2 id="接住异常"><a href="#接住异常" class="header-anchor">#</a> 接住异常</h2> <p>在OpenEX中,你需要使用<code>try</code> <code>catch</code>语句来处理运行时发生的异常</p> <blockquote><p>该语句更新于<code>Pro v0.1.7</code>在此之前,OpenEX无法在用户脚本中处理运行时异常</p></blockquote> <p>以下是如何定义一套<code>try</code> <code>catch</code>语句的例子</p> <div class="language-openex line-numbers-mode"><pre class="language-text"><code>try {
+    /* 可能发生异常的代码 */
+}catch 异常类型 信息变量名,调用栈结构变量名 {
+    /* 异常处理代码 */
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>异常类型: 参考<a href="/OpenEXDoc/zh/issues.html#对照表">对照表</a> 中异常类型名</li> <li>信息变量名: <code>STRING</code> 类型的变量, 存储了异常被抛出的信息</li> <li>调用栈结构变量名: <code>ARRAY</code> 类型的数组, 存储调用栈信息</li></ul> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>一个标准处理<code>ILLEGAL_ACCESS_EXCEPTION</code>异常的代码实例</p> <div class="language-openex line-numbers-mode"><pre class="language-text"><code>try{
+    /* 假设该段代码一定会发生ILLEGAL_ACCESS_EXCEPTION异常 
+    * 异常信息与调用栈结构以实际为准
+    */
+}catch ILLEGAL_ACCESS_EXCEPTION message , stack {
+    system.print(message);
+    system.print(stack);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>您会在终端看到以下输出</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>Not found arg.
+<span class="token punctuation">[</span>debug.main, loader.boot<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div> <h2 id="抛出异常"><a href="#抛出异常" class="header-anchor">#</a> 抛出异常</h2> <p>OpenEX也支持您主动在用户脚本中抛出异常,您需要<code>throw</code>语句来抛出您的异常</p> <p>以下是<code>throw</code>语句的标准格式</p> <div class="language-openex line-numbers-mode"><pre class="language-text"><code>throw 异常类型 : 异常信息 ;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>异常类型: 参考<a href="/OpenEXDoc/zh/issues.html#对照表">对照表</a> 中异常类型名</li> <li>异常信息: 您要显示的异常信息</li></ul> <blockquote><p>异常信息可以是一段表达式,也可以是字符串组合 <code>不能为数组类型</code><br>
+但最终都会被转换成<code>STRING</code>类型的信息</p></blockquote> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>一个标准抛出<code>ILLEGAL_ACCESS_EXCEPTION</code>异常的代码实例</p> <div class="language-openex line-numbers-mode"><pre class="language-text"><code>throw ILLEGAL_ACCESS_EXCEPTION:&quot;Not found arg&quot; + (1+3);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>您会在终端看到以下输出</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>ScriptRuntimeError: Not found arg4
+	ThreadName: main
+	FileName: debug.exf
+	Exception: ILLEGAL_ACCESS_EXCEPTION
+	Edition: OpenEX Pro
+	Version: v0.1.7
+Call stack struct:
+    at <span class="token operator">&lt;</span>debug.exf<span class="token operator">&gt;</span>: debug.main<span class="token punctuation">(</span>User Script<span class="token punctuation">)</span>
+	at <span class="token operator">&lt;</span>debug.exf<span class="token operator">&gt;</span>: loader.boot<span class="token punctuation">(</span>Script Loader<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/OpenEXDoc/zh/help/sem.html" class="prev">
+        运算符
+      </a></span> <span class="next"><a href="/OpenEXDoc/zh/extend/">
+        基础开发
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/OpenEXDoc/assets/js/app.0b078796.js" defer></script><script src="/OpenEXDoc/assets/js/2.4c546f0b.js" defer></script><script src="/OpenEXDoc/assets/js/1.80356216.js" defer></script><script src="/OpenEXDoc/assets/js/33.bdb5976a.js" defer></script>
+  </body>
+</html>
